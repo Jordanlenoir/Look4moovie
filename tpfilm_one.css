@@ -8,10 +8,24 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    display: flow-root;
+    background-color: rgba(57, 55, 55, 0.42);
+    max-width: 100%;
     margin: auto;
-    padding: 0 10px;
+    padding: 0 5px;  
 }
+
+
+.Descript{
+    display: block;
+    flex-wrap: wrap;
+    width: 50%;
+    color: #171717;
+    background-color:white;
+    border-radius: 17px;
+    margin-left: 25%;
+    padding-bottom: 0;
+  }  
 
 .movie-details {
     background-color: #292929;
@@ -24,6 +38,7 @@ body {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    color: #d4aa11;
 }
 
 .movie-details h1 {

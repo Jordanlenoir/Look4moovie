@@ -22,20 +22,19 @@ async function displayMovies(movies) {
         const details = await movieDetails.json();
 
         const movieHTML = `
-            <div class="movie" onclick="openMovieDetails('${details.imdbID}')">
+            <div class="container" onclick="openMovieDetails('${details.imdbID}')">
                 <img src="${details.Poster !== "N/A" ? details.Poster : 'placeholder.jpg'}" alt="${details.Title}">
-                <div>
                     <h3>${details.Title}</h3>
-                    <p><b>Year:</b> ${details.Year}</p>
-                    <p><b>Rated:</b> ${details.Rated}</p>
-                    <p><b>Released:</b> ${details.Released}</p>
-                    <p><b>Genre:</b> ${details.Genre}</p>
-                    <p><b>Writer:</b> ${details.Writer}</p>
-                    <p><b>Actors:</b> ${details.Actors}</p>
-                    <p><b>Plot:</b> ${details.Plot}</p>
-                    <p><b>Language:</b> ${details.Language}</p>
-                    <p><b>Awards:</b> ${details.Awards}</p>
-                </div>
+                    <div class="Descript"> 
+                        <p><b>Year:</b> ${details.Year}</p>
+                        <p><b>Rated:</b> ${details.Rated}</p>
+                        <p><b>Released:</b> ${details.Released}</p>
+                        <p><b>Genre:</b> ${details.Genre}</p>
+                        <p><b>Writer:</b> ${details.Writer}</p>
+                        <p><b>Actors:</b> ${details.Actors}</p>
+                        <p><b>Language:</b> ${details.Language}</p>
+                        <p><b>Awards:</b> ${details.Awards}</p>
+                    </div><br>    
             </div>
         `;
 
@@ -44,5 +43,5 @@ async function displayMovies(movies) {
 }
 
 function openMovieDetails(id) {
-    window.location.href = `details.html?id=${id}`;
+    window.location.href = `tpfilm_one.html?id=${id}`;
 }

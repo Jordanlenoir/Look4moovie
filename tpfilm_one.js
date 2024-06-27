@@ -22,18 +22,19 @@ async function fetchMovieDetails(id) {
 function displayMovieDetails(movie) {
     const movieDetails = document.getElementById('movie-details');
     movieDetails.innerHTML = `
-        <div class="movie-details">
+        <div  >
             <img src="${movie.Poster !== "N/A" ? movie.Poster : 'placeholder.jpg'}" alt="${movie.Title}">
             <h1>${movie.Title}</h1>
+           <div class="Descript"> 
             <p><b>Year:</b> ${movie.Year}</p>
             <p><b>Rated:</b> ${movie.Rated}</p>
             <p><b>Released:</b> ${movie.Released}</p>
             <p><b>Genre:</b> ${movie.Genre}</p>
             <p><b>Writer:</b> ${movie.Writer}</p>
             <p><b>Actors:</b> ${movie.Actors}</p>
-            <p><b>Plot:</b> ${movie.Plot}</p>
             <p><b>Language:</b> ${movie.Language}</p>
             <p><b>Awards:</b> ${movie.Awards}</p>
+           </div><br> 
         </div>
     `;
 }

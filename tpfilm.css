@@ -15,6 +15,18 @@ body {
   padding: 0 5px;
 }
 
+.Descript{
+  display: block;
+    width: 50%;
+    color: #171717;
+    background-color:white;
+    border-radius: 17px;
+    margin-left: 25%;
+    padding-bottom: 0;
+
+    
+} 
+
 h1 {
   color: #d4aa11;
 }
@@ -46,6 +58,7 @@ button {
   text-align: left;
   display: flex;
   flex-wrap: wrap;
+  border-color: gold ;
 }
 
 .movie img {
@@ -53,6 +66,7 @@ button {
   height: auto;
   margin-right: 20px;
   border-radius: 5px;
+
 }
 
 .movie h3 {
